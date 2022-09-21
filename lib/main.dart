@@ -1,9 +1,11 @@
+import 'package:awesome_ui/screens/A24/a24_screen.dart';
 import 'package:awesome_ui/screens/AnimatedBackground/animated_background_screen.dart';
 import 'package:awesome_ui/screens/BackPrompt/MyHomePage.dart';
 import 'package:awesome_ui/screens/Bank%20Cards/bank_app.dart';
 import 'package:awesome_ui/screens/Banking%20App/banking_app_screen.dart';
 import 'package:awesome_ui/screens/BoardingPass/boarding_pass_screen.dart';
 import 'package:awesome_ui/screens/Bottom%20Nav/bottom_nav_screen.dart';
+import 'package:awesome_ui/screens/Brutalism/brutalism_screen.dart';
 import 'package:awesome_ui/screens/Building/building_screen.dart';
 import 'package:awesome_ui/screens/Checkout/checkout_screen.dart';
 import 'package:awesome_ui/screens/Clock/main.dart';
@@ -13,8 +15,10 @@ import 'package:awesome_ui/screens/DayAndNight/screens/login/login_screen.dart';
 import 'package:awesome_ui/screens/DeliveryFood/food_delivery_screen.dart';
 import 'package:awesome_ui/screens/DonoutStore/donout_store_screen.dart';
 import 'package:awesome_ui/screens/FlappyBird/homepage.dart';
+import 'package:awesome_ui/screens/Form/form_screen.dart';
 import 'package:awesome_ui/screens/Hezi%20App/henzi_app_screen.dart';
 import 'package:awesome_ui/screens/Home%20Rental%20App/home_rental_app_screen.dart';
+import 'package:awesome_ui/screens/JobFinder/job_finder_screen.dart';
 import 'package:awesome_ui/screens/JobsApp/jobs_app_screen.dart';
 import 'package:awesome_ui/screens/Mini%20Portafolio/mini_portafolio_screen.dart';
 import 'package:awesome_ui/screens/NftMarketPlace/screens/onboarding_screen.dart';
@@ -30,7 +34,10 @@ import 'package:awesome_ui/screens/SmartHome/smart_home_screen.dart';
 import 'package:awesome_ui/screens/Socket/socket_screen.dart';
 import 'package:awesome_ui/screens/Sopitas/sopitas_screen.dart';
 import 'package:awesome_ui/screens/SopitasV2/sopitas_screenV2.dart';
+import 'package:awesome_ui/screens/StorageApp/storage_screen.dart';
+import 'package:awesome_ui/screens/TaskApp/task_screen.dart';
 import 'package:awesome_ui/screens/Tetris/Tetris.dart';
+import 'package:awesome_ui/screens/Ticket/ticket_screen.dart';
 import 'package:awesome_ui/screens/Workout%20App/workout_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -42,7 +49,7 @@ import 'screens/Gradiant/gradiant_screen.dart';
 }*/
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
-    SystemUiOverlayStyle(
+    const SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
         statusBarIconBrightness: Brightness.dark),
   );
@@ -81,150 +88,151 @@ class Chooser extends StatelessWidget {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => WorkOutScreen()));
                     },
-                    child: Text("Workout app")),
+                    child: const Text("Workout app")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(
                           MaterialPageRoute(builder: (context) => SignUp()));
                     },
-                    child: Text("Signup")),
+                    child: const Text("Signup")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(
                           MaterialPageRoute(builder: (context) => HenziApp()));
                     },
-                    child: Text("Henzi App")),
+                    child: const Text("Henzi App")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => BottomAnimationNav()));
                     },
-                    child: Text("Bottom Nav Animation")),
+                    child: const Text("Bottom Nav Animation")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(
                           MaterialPageRoute(builder: (context) => SmartHome()));
                     },
-                    child: Text("Smart Home")),
+                    child: const Text("Smart Home")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => BankingApp()));
                     },
-                    child: Text("Banking App")),
+                    child: const Text("Banking App")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => HomeRentalApp()));
+                          builder: (context) => const HomeRentalApp()));
                     },
-                    child: Text("Rental App")),
+                    child: const Text("Rental App")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) =>
                               MyHomePage(title: 'Flutter Demo Home Page')));
                     },
-                    child: Text("MyHomePage")),
+                    child: const Text("MyHomePage")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => SopitasScreen()));
+                          builder: (context) => const SopitasScreen()));
                     },
-                    child: Text("Sopitas")),
+                    child: const Text("Sopitas")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => SopitasScreen2()));
+                          builder: (context) => const SopitasScreen2()));
                     },
-                    child: Text("Sopitas V2")),
+                    child: const Text("Sopitas V2")),
                 ElevatedButton(
                     onPressed: () {
-                      Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => BankCard()));
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const BankCard()));
                     },
-                    child: Text("Bank Cards")),
+                    child: const Text("Bank Cards")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => DrawingBoard()));
                     },
-                    child: Text("Drawing App")),
-                ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => JobsApp()));
-                    },
-                    child: Text("Jobs App")),
+                    child: const Text("Drawing App")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => PlayStationControllerScreen()));
+                          builder: (context) => const JobsApp()));
                     },
-                    child: Text("PS Controller")),
+                    child: const Text("Jobs App")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) =>
+                              const PlayStationControllerScreen()));
+                    },
+                    child: const Text("PS Controller")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => ClockScreen()));
                     },
-                    child: Text("Clock Screen")),
+                    child: const Text("Clock Screen")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => LoginScreen()));
                     },
-                    child: Text("Day And Night")),
+                    child: const Text("Day And Night")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => FlappyBird()));
+                          builder: (context) => const FlappyBird()));
                     },
-                    child: Text("Flappy Bird")),
+                    child: const Text("Flappy Bird")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(
                           MaterialPageRoute(builder: (context) => Tetris()));
                     },
-                    child: Text("Tetris")),
+                    child: const Text("Tetris")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => ScraperScreen()));
+                          builder: (context) => const ScraperScreen()));
                     },
-                    child: Text("Scraper")),
+                    child: const Text("Scraper")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => PosterScreen()));
+                          builder: (context) => const PosterScreen()));
                     },
-                    child: Text("Poster")),
+                    child: const Text("Poster")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => SocketScreen()));
+                          builder: (context) => const SocketScreen()));
                     },
-                    child: Text("Socket")),
+                    child: const Text("Socket")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => BoardingPassScree()));
+                          builder: (context) => const BoardingPassScree()));
                     },
-                    child: Text("Boarding Pass")),
+                    child: const Text("Boarding Pass")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => DonouStoreScreen()));
+                          builder: (context) => const DonouStoreScreen()));
                     },
-                    child: Text("Donout Store")),
+                    child: const Text("Donout Store")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => RemoteTvControl()));
+                          builder: (context) => const RemoteTvControl()));
                     },
                     child: const Text("Tv Control")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => NftScrollHome()));
+                          builder: (context) => const NftScrollHome()));
                     },
                     child: const Text("Nft Scroll")),
                 ElevatedButton(
@@ -287,6 +295,48 @@ class Chooser extends StatelessWidget {
                           builder: (context) => const CryptoWallet()));
                     },
                     child: const Text("Crypto Wallet")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const BrutalismScreen()));
+                    },
+                    child: const Text("Brutalism")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const JobFinder()));
+                    },
+                    child: const Text("Job Finder")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => const A24()));
+                    },
+                    child: const Text("A24")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const TicketUiScreen()));
+                    },
+                    child: const Text("Ticket")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const FormScreen()));
+                    },
+                    child: const Text("Form Screen")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const TaskScreen()));
+                    },
+                    child: const Text("Task Screen")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const StorageScreen()));
+                    },
+                    child: const Text("Storage App")),
               ],
             ),
           ),

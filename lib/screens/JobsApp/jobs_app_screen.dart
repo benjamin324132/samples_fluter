@@ -15,7 +15,7 @@ class _JobsAppState extends State<JobsApp> {
     return Scaffold(
       backgroundColor: Colors.white,
       bottomNavigationBar: Container(
-        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 3),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
         height: 60,
         width: double.infinity,
         child: Row(
@@ -37,7 +37,7 @@ class _JobsAppState extends State<JobsApp> {
                 Container(
                   width: 5.0,
                   height: 5.0,
-                  decoration: new BoxDecoration(
+                  decoration:  const BoxDecoration(
                     color: Colors.pinkAccent,
                     shape: BoxShape.circle,
                   ),
@@ -102,20 +102,20 @@ class _JobsAppState extends State<JobsApp> {
                 ],
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Container(
                   height: 55,
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
                     color: Colors.grey[200]!.withOpacity(0.6),
-                    borderRadius: BorderRadius.all(Radius.circular(13)),
+                    borderRadius: const BorderRadius.all(Radius.circular(13)),
                   ),
                   child: TextField(
                       decoration: InputDecoration(
-                          contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 18),
+                          contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 18),
                           border: InputBorder.none,
                           hintText: "Search for job",
-                          hintStyle: TextStyle(color: Colors.grey),
+                          hintStyle: const TextStyle(color: Colors.grey),
                           prefixIcon: Padding(
                             padding: const EdgeInsets.all(12.0),
                             child: SvgPicture.asset(
@@ -132,14 +132,14 @@ class _JobsAppState extends State<JobsApp> {
                           ))),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 25,
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
+                  children: const [
                     Text("Popular Categories", style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500)),
                     Text("View all",
                         style: TextStyle(
@@ -150,7 +150,7 @@ class _JobsAppState extends State<JobsApp> {
                   ],
                 ),
               ),
-              SizedBox(height: 25),
+              const SizedBox(height: 25),
               SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(children: [
@@ -158,14 +158,14 @@ class _JobsAppState extends State<JobsApp> {
                     card(context, "Finance", Colors.blueAccent, "assets/images/jobs1.png"),
                     card(context, "Crypto", Colors.yellowAccent, "assets/images/jobs3.png"),
                   ])),
-              SizedBox(
+              const SizedBox(
                 height: 25,
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
+                  children: const [
                     Text("Jobs for you", style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500)),
                     Text("View all",
                         style: TextStyle(
@@ -176,27 +176,27 @@ class _JobsAppState extends State<JobsApp> {
                   ],
                 ),
               ),
-              JobCard(
+              const JobCard(
                 img: "assets/icons/google.svg",
                 location: "Google, New York",
                 title: "UX Designer",
               ),
-              JobCard(
+              const JobCard(
                 img: "assets/icons/apple.svg",
                 location: "Apple, San Mateo",
                 title: "Python Developer",
               ),
-              JobCard(
+              const JobCard(
                 img: "assets/icons/twitter.svg",
                 location: "Twitter, Los Angeles",
                 title: "Account Manager",
               ),
-              JobCard(
+              const JobCard(
                 img: "assets/icons/microsoft.svg",
                 location: "Microsoft, New York",
                 title: "Next JS Developer",
               ),
-              JobCard(
+              const JobCard(
                 img: "assets/icons/nike.svg",
                 location: "Nike, San Francisco",
                 title: "Software Ing.",
@@ -213,7 +213,7 @@ class _JobsAppState extends State<JobsApp> {
       margin: const EdgeInsets.only(left: 20.0),
       height: 180,
       width: 230,
-      decoration: BoxDecoration(color: color.withOpacity(0.2), borderRadius: BorderRadius.all(Radius.circular(32))),
+      decoration: BoxDecoration(color: color.withOpacity(0.2), borderRadius: const BorderRadius.all(Radius.circular(32))),
       child: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Stack(
@@ -224,10 +224,10 @@ class _JobsAppState extends State<JobsApp> {
               child: Container(
                 height: 80,
                 width: 80,
-                decoration: new BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(20)), color: Colors.white),
+                decoration: const BoxDecoration(borderRadius:  BorderRadius.all(Radius.circular(20)), color: Colors.white),
               ),
             ),
-            Positioned(
+            const Positioned(
               right: 10,
               top: 10,
               child: Icon(
@@ -242,7 +242,7 @@ class _JobsAppState extends State<JobsApp> {
                 height: 110,
                 width: 110,
                 child: Padding(
-                  padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+                  padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
                   child: Transform(
                       alignment: Alignment.center, transform: Matrix4.rotationY(math.pi), child: Image.asset(img)),
                 ),
@@ -255,8 +255,8 @@ class _JobsAppState extends State<JobsApp> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(title, style: TextStyle(fontSize: 15, fontWeight: FontWeight.w700)),
-                  Text("72 Jobs open")
+                  Text(title, style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w700)),
+                  const Text("72 Jobs open")
                 ],
               ),
             )
@@ -280,15 +280,15 @@ class JobCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Container(
         height: 90,
-        margin: EdgeInsets.only(top: 25),
+        margin: const EdgeInsets.only(top: 25),
         width: double.infinity,
         decoration: BoxDecoration(
             color: Colors.transparent,
             border: Border.all(color: Colors.grey[300]!),
-            borderRadius: BorderRadius.all(Radius.circular(18))),
+            borderRadius: const BorderRadius.all(Radius.circular(18))),
         child: Padding(
           padding: const EdgeInsets.all(12.0),
           child: Row(
@@ -301,22 +301,22 @@ class JobCard extends StatelessWidget {
                       height: 65,
                       width: 65,
                       decoration:
-                          BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.all(Radius.circular(8))),
+                          BoxDecoration(color: Colors.grey[100], borderRadius: const BorderRadius.all(Radius.circular(8))),
                       child: Center(
                           child: SvgPicture.asset(
                         img,
                         height: 30,
                         width: 30,
                       ))),
-                  SizedBox(width: 15),
+                  const SizedBox(width: 15),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Text(location,
                           style: TextStyle(fontSize: 15, color: Colors.grey[700], fontWeight: FontWeight.w600)),
-                      Text(title, style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700)),
-                      Text("\$10k - \$15k / Month", style: TextStyle(fontSize: 15, fontWeight: FontWeight.w500)),
+                      Text(title, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w700)),
+                      const Text("\$10k - \$15k / Month", style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w500)),
                     ],
                   ),
                 ],
@@ -325,11 +325,11 @@ class JobCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.bookmark_outline,
                     color: Colors.grey,
                   ),
-                  Text("3 h"),
+                  const Text("3 h"),
                 ],
               ),
             ],

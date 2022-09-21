@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class BoardingPassScree extends StatefulWidget {
@@ -8,11 +10,16 @@ class BoardingPassScree extends StatefulWidget {
 }
 
 class _BoardingPassScreeState extends State<BoardingPassScree> {
+
+  double random(min, max) {
+    return min + Random().nextInt(max - min).toDouble();
+  }
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Color(0xfff9f9f9),
+      backgroundColor: const Color(0xfff9f9f9),
       body: Column(
         children: [
           Container(
@@ -21,21 +28,21 @@ class _BoardingPassScreeState extends State<BoardingPassScree> {
             color: Colors.amberAccent,
             child: Column(
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 35,
                 ),
-                Text(
+                const Text(
                   "BOARDING PASS",
                   style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, letterSpacing: 1.5),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 40,
                 ),
                 Row(
                   children: [
                     Column(
                       children: [
-                        Text(
+                        const Text(
                           "LHR",
                           style: TextStyle(
                               fontSize: 90,
@@ -43,7 +50,7 @@ class _BoardingPassScreeState extends State<BoardingPassScree> {
                               fontWeight: FontWeight.bold,
                               letterSpacing: 1,
                               shadows: [
-                                Shadow(
+                                 Shadow(
                                     // bottomLeft
                                     offset: Offset(-1.5, -1.5),
                                     color: Colors.black),
@@ -55,19 +62,19 @@ class _BoardingPassScreeState extends State<BoardingPassScree> {
                                     // topRight
                                     offset: Offset(1.5, 1.5),
                                     color: Colors.black),
-                                Shadow(
+                                 Shadow(
                                     // topLeft
                                     offset: Offset(-1.5, 1.5),
                                     color: Colors.black),
                               ]),
                         ),
                         Row(
-                          children: [
-                            Icon(Icons.arrow_forward),
-                            SizedBox(
+                          children:const [
+                             Icon(Icons.arrow_forward),
+                             SizedBox(
                               width: 12,
                             ),
-                            Text(
+                             Text(
                               "JFK",
                               style: TextStyle(
                                 fontSize: 50,
@@ -78,32 +85,32 @@ class _BoardingPassScreeState extends State<BoardingPassScree> {
                         )
                       ],
                     ),
-                    Spacer(),
+                    const Spacer(),
                     Column(
-                      children: [
-                        Icon(
+                      children:const [
+                         Icon(
                           Icons.airplane_ticket,
                         ),
-                        SizedBox(
+                         SizedBox(
                           height: 16,
                         ),
-                        Text(
+                         Text(
                           "London",
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                          style:  TextStyle(fontWeight: FontWeight.bold),
                         ),
-                        SizedBox(
+                         SizedBox(
                           height: 16,
                         ),
-                        Text("New York", style: TextStyle(fontWeight: FontWeight.bold))
+                         Text("New York", style: TextStyle(fontWeight: FontWeight.bold))
                       ],
                     ),
-                    Spacer(),
+                    const Spacer(),
                   ],
                 ),
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Container(
@@ -119,26 +126,26 @@ class _BoardingPassScreeState extends State<BoardingPassScree> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Flight", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey)),
-                          SizedBox(
+                          const Text("Flight", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey)),
+                          const SizedBox(
                             height: 12,
                           ),
-                          Text("AA996", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
+                          const Text("AA996", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
                         ],
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
-                          Text("Gate", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey)),
-                          SizedBox(
+                          const Text("Gate", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey)),
+                          const SizedBox(
                             height: 12,
                           ),
-                          Text("B5", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
+                          const Text("B5", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
                         ],
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Row(
@@ -148,43 +155,43 @@ class _BoardingPassScreeState extends State<BoardingPassScree> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Board", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey)),
-                          SizedBox(
+                          const Text("Board", style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.grey)),
+                          const SizedBox(
                             height: 12,
                           ),
-                          Text("7:50 AM", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+                          const Text("7:50 AM", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
                         ],
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Text("Departs", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey)),
-                          SizedBox(
+                        children:const [
+                           Text("Departs", style:  TextStyle(fontWeight: FontWeight.bold, color: Colors.grey)),
+                           SizedBox(
                             height: 12,
                           ),
-                          Text("8:07 AM", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+                           Text("8:07 AM", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
                         ],
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.end,
-                        children: [
-                          Text("Arrives", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey)),
-                          SizedBox(
+                        children:const [
+                           Text("Arrives", style:  TextStyle(fontWeight: FontWeight.bold, color: Colors.grey)),
+                           SizedBox(
                             height: 12,
                           ),
-                          Text("3:45 AM", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+                           Text("3:45 AM", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
                         ],
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
-                  Divider(
+                  const Divider(
                     color: Colors.black,
                     thickness: 2,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Row(
@@ -193,27 +200,27 @@ class _BoardingPassScreeState extends State<BoardingPassScree> {
                     children: [
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text("Passenger", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey)),
-                          SizedBox(
+                        children:const [
+                           Text("Passenger", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey)),
+                           SizedBox(
                             height: 12,
                           ),
-                          Text("Joseph Gilbert", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
+                           Text("Joseph Gilbert", style:  TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
                         ],
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.end,
-                        children: [
-                          Text("Seat", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey)),
-                          SizedBox(
+                        children:const [
+                           Text("Seat", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey)),
+                           SizedBox(
                             height: 12,
                           ),
-                          Text("2A", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
+                           Text("2A", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
                         ],
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 40,
                   ),
                   Row(
@@ -222,7 +229,7 @@ class _BoardingPassScreeState extends State<BoardingPassScree> {
                       for (int i = 0; i < 25; i++)
                         Container(
                           color: Colors.black,
-                          width: 5,
+                          width: random(2, 10),
                           height: 60,
                         )
                     ],

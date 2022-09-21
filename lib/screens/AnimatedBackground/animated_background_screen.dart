@@ -10,7 +10,7 @@ class AnimatedBackground extends StatefulWidget {
 }
 
 class _AnimatedBackgroundState extends State<AnimatedBackground> {
-  Random random = new Random();
+  Random random = Random();
   double start = 0;
   double start2 = 55;
   double start3 = 150;
