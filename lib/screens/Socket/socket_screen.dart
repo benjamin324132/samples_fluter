@@ -68,7 +68,7 @@ class _SocketScreenState extends State<SocketScreen> {
                   onPressed: () {
                     _socket.emit('recive_ping', {"data": "Benja"});
                   },
-                  child: Text("Socker"))),
+                  child: const Text("Socket"))),
         ],
       ),
     );
