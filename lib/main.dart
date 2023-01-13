@@ -27,10 +27,12 @@ import 'package:awesome_ui/screens/NftMarketPlace/screens/onboarding_screen.dart
 import 'package:awesome_ui/screens/NftScroll/nft_scroll_home.dart';
 import 'package:awesome_ui/screens/Notes/posts_screen.dart';
 import 'package:awesome_ui/screens/Paint%20App/paint_app_screen.dart';
+import 'package:awesome_ui/screens/Pdf/pages/invoices.dart';
 import 'package:awesome_ui/screens/Playstationcontroller/play_station_controller.dart';
 import 'package:awesome_ui/screens/PodcastApp/podcast_player_screen.dart';
 import 'package:awesome_ui/screens/Poster/poster_screen.dart';
 import 'package:awesome_ui/screens/RemoteTvControl/remote_tv_control_screen.dart';
+import 'package:awesome_ui/screens/ResumeBuilder/resume_builder_screen.dart';
 import 'package:awesome_ui/screens/Scaper/scraper_screen.dart';
 import 'package:awesome_ui/screens/Signup/signup_screen.dart';
 import 'package:awesome_ui/screens/SmartControl/smart_home_control.dart';
@@ -358,13 +360,25 @@ class Chooser extends StatelessWidget {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => const MoviesScreen()));
                     },
-                    child: const Text("Movies")),   
-               ElevatedButton(
+                    child: const Text("Movies")),
+                ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => const LinkTree()));
                     },
-                    child: const Text("Link Tree")),        
+                    child: const Text("Link Tree")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => InvoicePage()));
+                    },
+                    child: const Text("Pdf")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const ResumeBuilderScreen()));
+                    },
+                    child: const Text("Resume Builder")),
               ],
             ),
           ),
