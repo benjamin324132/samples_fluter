@@ -7,6 +7,7 @@ import 'package:awesome_ui/screens/BoardingPass/boarding_pass_screen.dart';
 import 'package:awesome_ui/screens/Bottom%20Nav/bottom_nav_screen.dart';
 import 'package:awesome_ui/screens/Brutalism/brutalism_screen.dart';
 import 'package:awesome_ui/screens/Building/building_screen.dart';
+import 'package:awesome_ui/screens/Chat/chat_screen.dart';
 import 'package:awesome_ui/screens/Checkout/checkout_screen.dart';
 import 'package:awesome_ui/screens/Clock/main.dart';
 import 'package:awesome_ui/screens/CryptoEventApp/crypto_event_screen.dart';
@@ -22,6 +23,7 @@ import 'package:awesome_ui/screens/JobFinder/job_finder_screen.dart';
 import 'package:awesome_ui/screens/JobsApp/jobs_app_screen.dart';
 import 'package:awesome_ui/screens/LinkTree/link_tree_screen.dart';
 import 'package:awesome_ui/screens/Mini%20Portafolio/mini_portafolio_screen.dart';
+import 'package:awesome_ui/screens/MoviePosters/movie_posters.dart';
 import 'package:awesome_ui/screens/Movies/movies_screen.dart';
 import 'package:awesome_ui/screens/NftMarketPlace/screens/onboarding_screen.dart';
 import 'package:awesome_ui/screens/NftScroll/nft_scroll_home.dart';
@@ -48,6 +50,7 @@ import 'package:awesome_ui/screens/Workout%20App/workout_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'screens/BarcodeScanner/barcode_scanner.dart';
 import 'screens/Gradiant/gradiant_screen.dart';
 
 /*void main() {
@@ -379,6 +382,24 @@ class Chooser extends StatelessWidget {
                           builder: (context) => const ResumeBuilderScreen()));
                     },
                     child: const Text("Resume Builder")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const ChatScreen()));
+                    },
+                    child: const Text("Chat App")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const BarcodeScanner()));
+                    },
+                    child: const Text("Barcode Scanner")),
+               ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const MoviesPosters()));
+                    },
+                    child: const Text("Movie posters")),     
               ],
             ),
           ),
