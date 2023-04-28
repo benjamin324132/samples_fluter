@@ -10,13 +10,13 @@ import 'package:awesome_ui/screens/Building/building_screen.dart';
 import 'package:awesome_ui/screens/Chat/chat_screen.dart';
 import 'package:awesome_ui/screens/Checkout/checkout_screen.dart';
 import 'package:awesome_ui/screens/Clock/main.dart';
-import 'package:awesome_ui/screens/CryptoEventApp/crypto_event_screen.dart';
 import 'package:awesome_ui/screens/CryptoWallet/crypto_wallet_screen.dart';
 import 'package:awesome_ui/screens/DayAndNight/screens/login/login_screen.dart';
 import 'package:awesome_ui/screens/DeliveryFood/food_delivery_screen.dart';
 import 'package:awesome_ui/screens/DonoutStore/donout_store_screen.dart';
 import 'package:awesome_ui/screens/FlappyBird/homepage.dart';
 import 'package:awesome_ui/screens/Form/form_screen.dart';
+import 'package:awesome_ui/screens/Hedon/splash_screen.dart';
 import 'package:awesome_ui/screens/Hezi%20App/henzi_app_screen.dart';
 import 'package:awesome_ui/screens/Home%20Rental%20App/home_rental_app_screen.dart';
 import 'package:awesome_ui/screens/JobFinder/job_finder_screen.dart';
@@ -28,17 +28,15 @@ import 'package:awesome_ui/screens/Movies/movies_screen.dart';
 import 'package:awesome_ui/screens/NftMarketPlace/screens/onboarding_screen.dart';
 import 'package:awesome_ui/screens/NftScroll/nft_scroll_home.dart';
 import 'package:awesome_ui/screens/Notes/posts_screen.dart';
-import 'package:awesome_ui/screens/Paint%20App/paint_app_screen.dart';
 import 'package:awesome_ui/screens/Pdf/pages/invoices.dart';
 import 'package:awesome_ui/screens/Playstationcontroller/play_station_controller.dart';
 import 'package:awesome_ui/screens/PodcastApp/podcast_player_screen.dart';
 import 'package:awesome_ui/screens/Poster/poster_screen.dart';
+import 'package:awesome_ui/screens/ProductInventory/product_inventory_screen.dart';
 import 'package:awesome_ui/screens/RemoteTvControl/remote_tv_control_screen.dart';
 import 'package:awesome_ui/screens/ResumeBuilder/resume_builder_screen.dart';
 import 'package:awesome_ui/screens/Scaper/scraper_screen.dart';
-import 'package:awesome_ui/screens/Signup/signup_screen.dart';
 import 'package:awesome_ui/screens/SmartControl/smart_home_control.dart';
-import 'package:awesome_ui/screens/SmartHome/smart_home_screen.dart';
 import 'package:awesome_ui/screens/Socket/socket_screen.dart';
 import 'package:awesome_ui/screens/Sopitas/sopitas_screen.dart';
 import 'package:awesome_ui/screens/SopitasV2/sopitas_screenV2.dart';
@@ -46,12 +44,13 @@ import 'package:awesome_ui/screens/StorageApp/storage_screen.dart';
 import 'package:awesome_ui/screens/TaskApp/task_screen.dart';
 import 'package:awesome_ui/screens/Tetris/Tetris.dart';
 import 'package:awesome_ui/screens/Ticket/ticket_screen.dart';
+import 'package:awesome_ui/screens/WeatherApp/weather_app_screen.dart';
 import 'package:awesome_ui/screens/Workout%20App/workout_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
 import 'screens/BarcodeScanner/barcode_scanner.dart';
 import 'screens/Gradiant/gradiant_screen.dart';
+import 'screens/PaymentTracker/payment_tracker_screen.dart';
 
 /*void main() {
   runApp(MyApp());
@@ -101,12 +100,6 @@ class Chooser extends StatelessWidget {
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => SignUp()));
-                    },
-                    child: const Text("Signup")),
-                ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).push(
                           MaterialPageRoute(builder: (context) => HenziApp()));
                     },
                     child: const Text("Henzi App")),
@@ -116,12 +109,6 @@ class Chooser extends StatelessWidget {
                           builder: (context) => BottomAnimationNav()));
                     },
                     child: const Text("Bottom Nav Animation")),
-                ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => SmartHome()));
-                    },
-                    child: const Text("Smart Home")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
@@ -159,12 +146,6 @@ class Chooser extends StatelessWidget {
                           builder: (context) => const BankCard()));
                     },
                     child: const Text("Bank Cards")),
-                ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => DrawingBoard()));
-                    },
-                    child: const Text("Drawing App")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
@@ -283,12 +264,6 @@ class Chooser extends StatelessWidget {
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => const CryptoEventScreen()));
-                    },
-                    child: const Text("Crypto Event")),
-                ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => const GradiantScreen()));
                     },
                     child: const Text("Gradient screen")),
@@ -399,7 +374,31 @@ class Chooser extends StatelessWidget {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => const MoviesPosters()));
                     },
-                    child: const Text("Movie posters")),     
+                    child: const Text("Movie posters")),   
+              ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const ProductInventory()));
+                    },
+                    child: const Text("Inventory")),   
+              ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const WeaterAppScreen()));
+                    },
+                    child: const Text("Weather App")),   
+               ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const PaymentTrackerScreen()));
+                    },
+                    child: const Text("Payment App")),       
+              ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const SplashScreen()));
+                    },
+                    child: const Text("Hedon")),                     
               ],
             ),
           ),

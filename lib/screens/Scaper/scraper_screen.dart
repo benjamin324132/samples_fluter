@@ -39,11 +39,11 @@ class _ScraperScreenState extends State<ScraperScreen> {
     for (int i = 0; i < data.length; i++) {
       var user =
           data[i].querySelectorAll("div.shot-details-container > div.user-information > a.url > span.display-name")[0];
-      var img = data[i].querySelectorAll("div.shot-thumbnail-base > figure > img")[0];
+      var img = data[i].querySelectorAll("div.js-thumbnail-base.shot-thumbnail-base.disabled-shot-section.dribbble-shot.dribbble > figure > img")[0];
       //print("Index: $i elemtent: ${data[i].children[0].toString()}");
       print(user.text.toString().trim());
-      print(img.attributes['src']);
-      items.add({"title": user.text.toString().trim(), "img": img.attributes['src']});
+      print(img.attributes['data-srcset'].toString().split(" ")[0]);
+      items.add({"title": user.text.toString().trim(), "img": img.attributes['data-srcset'].toString().split(" ")[0]});
       // dataController.addName(user.text.toString().trim());
       // dataController.addLocation(img.attributes['src'].toString().trim());
     }
