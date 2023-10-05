@@ -13,7 +13,6 @@ class AddScreen extends StatefulWidget {
 class _AddScreenState extends State<AddScreen> {
   TextEditingController _title = TextEditingController();
   TextEditingController _body = TextEditingController();
-  TextEditingController _img = TextEditingController();
 
   void addNewPost() async {
     var url = Uri.parse('https://ade-server.glitch.me/api/v1/posts');

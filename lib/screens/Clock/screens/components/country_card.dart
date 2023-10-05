@@ -46,12 +46,12 @@ class CountryCard extends StatelessWidget {
                     SvgPicture.asset(
                       iconSrc,
                       width: getProportionateScreenWidth(40),
-                      color: Theme.of(context).accentIconTheme.color,
+                      color: Theme.of(context).canvasColor,
                     ),
                     Spacer(),
                     Text(
                       time,
-                      style: Theme.of(context).textTheme.headline4,
+                      style: Theme.of(context).textTheme.headlineMedium,
                     ),
                     RotatedBox(
                       quarterTurns: 3,

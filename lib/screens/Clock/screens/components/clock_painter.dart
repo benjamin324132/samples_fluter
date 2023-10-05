@@ -22,7 +22,7 @@ class ClockPainter extends CustomPainter {
       center,
       Offset(minX, minY),
       Paint()
-        ..color = Theme.of(context).accentColor
+        ..color = Theme.of(context).canvasColor
         ..style = PaintingStyle.stroke
         ..strokeWidth = 10,
     );

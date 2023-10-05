@@ -3,7 +3,6 @@ import 'package:awesome_ui/screens/SopitasV2/post_screenV2.dart';
 import 'package:awesome_ui/screens/SopitasV2/post_second_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:http/http.dart' as http;
 
 class SopitasScreen2 extends StatefulWidget {

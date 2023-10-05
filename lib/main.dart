@@ -1,10 +1,8 @@
 import 'package:awesome_ui/screens/A24/a24_screen.dart';
 import 'package:awesome_ui/screens/AnimatedBackground/animated_background_screen.dart';
 import 'package:awesome_ui/screens/BackPrompt/MyHomePage.dart';
-import 'package:awesome_ui/screens/Bank%20Cards/bank_app.dart';
 import 'package:awesome_ui/screens/Banking%20App/banking_app_screen.dart';
 import 'package:awesome_ui/screens/BoardingPass/boarding_pass_screen.dart';
-import 'package:awesome_ui/screens/Bottom%20Nav/bottom_nav_screen.dart';
 import 'package:awesome_ui/screens/Brutalism/brutalism_screen.dart';
 import 'package:awesome_ui/screens/Building/building_screen.dart';
 import 'package:awesome_ui/screens/Chat/chat_screen.dart';
@@ -44,12 +42,12 @@ import 'package:awesome_ui/screens/StorageApp/storage_screen.dart';
 import 'package:awesome_ui/screens/TaskApp/task_screen.dart';
 import 'package:awesome_ui/screens/Tetris/Tetris.dart';
 import 'package:awesome_ui/screens/Ticket/ticket_screen.dart';
+import 'package:awesome_ui/screens/TransferApp/transfer_screen.dart';
 import 'package:awesome_ui/screens/WeatherApp/weather_app_screen.dart';
 import 'package:awesome_ui/screens/Workout%20App/workout_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'screens/BarcodeScanner/barcode_scanner.dart';
-import 'screens/Gradiant/gradiant_screen.dart';
 import 'screens/PaymentTracker/payment_tracker_screen.dart';
 
 /*void main() {
@@ -106,12 +104,6 @@ class Chooser extends StatelessWidget {
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => BottomAnimationNav()));
-                    },
-                    child: const Text("Bottom Nav Animation")),
-                ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => BankingApp()));
                     },
                     child: const Text("Banking App")),
@@ -140,12 +132,6 @@ class Chooser extends StatelessWidget {
                           builder: (context) => const SopitasScreen2()));
                     },
                     child: const Text("Sopitas V2")),
-                ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => const BankCard()));
-                    },
-                    child: const Text("Bank Cards")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
@@ -264,12 +250,6 @@ class Chooser extends StatelessWidget {
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => const GradiantScreen()));
-                    },
-                    child: const Text("Gradient screen")),
-                ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => const CheckoutScreen()));
                     },
                     child: const Text("Checkout screen")),
@@ -369,36 +349,42 @@ class Chooser extends StatelessWidget {
                           builder: (context) => const BarcodeScanner()));
                     },
                     child: const Text("Barcode Scanner")),
-               ElevatedButton(
+                ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => const MoviesPosters()));
                     },
-                    child: const Text("Movie posters")),   
-              ElevatedButton(
+                    child: const Text("Movie posters")),
+                ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => const ProductInventory()));
                     },
-                    child: const Text("Inventory")),   
-              ElevatedButton(
+                    child: const Text("Inventory")),
+                ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => const WeaterAppScreen()));
                     },
-                    child: const Text("Weather App")),   
-               ElevatedButton(
+                    child: const Text("Weather App")),
+                ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => const PaymentTrackerScreen()));
                     },
-                    child: const Text("Payment App")),       
-              ElevatedButton(
+                    child: const Text("Payment App")),
+                ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => const SplashScreen()));
                     },
-                    child: const Text("Hedon")),                     
+                    child: const Text("Hedon")),
+                    ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const TransferScreen()));
+                    },
+                    child: const Text("Transfer App")),
               ],
             ),
           ),

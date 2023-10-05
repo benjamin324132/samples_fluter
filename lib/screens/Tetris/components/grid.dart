@@ -1,6 +1,7 @@
 import 'package:awesome_ui/screens/Tetris/components/pixel.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class MyGrid extends StatelessWidget {
   List<Color> pieceColor = [
     Colors.red,

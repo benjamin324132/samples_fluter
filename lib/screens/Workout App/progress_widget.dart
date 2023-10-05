@@ -39,13 +39,6 @@ class _ProgressWidgetState extends State<ProgressWidget> with TickerProviderStat
   @override
   Widget build(BuildContext context) {
     final dimenstion = (MediaQuery.of(context).size.width - 10) * .3;
-    if (activeColor == null) {
-      activeColor = Theme.of(context).primaryColor;
-    }
-    if (backgroundColor == null) {
-      backgroundColor = Theme.of(context).disabledColor;
-    }
-    final inCurve = ElasticOutCurve(0.38);
     return Container(
       height: dimenstion,
       width: dimenstion,

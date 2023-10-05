@@ -8,7 +8,7 @@ ThemeData themeData(BuildContext context) {
   return ThemeData(
     appBarTheme: appBarTheme,
     primaryColor: kPrimaryColor,
-    accentColor: kAccentLightColor,
+    //accentColor: kAccentLightColor,
     scaffoldBackgroundColor: Colors.white,
     colorScheme: ColorScheme.light(
       secondary: kSecondaryLightColor,
@@ -16,7 +16,7 @@ ThemeData themeData(BuildContext context) {
     ),
     backgroundColor: Colors.white,
     iconTheme: IconThemeData(color: kBodyTextColorLight),
-    accentIconTheme: IconThemeData(color: kAccentIconLightColor),
+    //accentIconTheme: IconThemeData(color: kAccentIconLightColor),
     primaryIconTheme: IconThemeData(color: kPrimaryIconLightColor),
     textTheme: GoogleFonts.latoTextTheme().copyWith(
       bodyText1: TextStyle(color: kBodyTextColorLight),
@@ -31,7 +31,7 @@ ThemeData themeData(BuildContext context) {
 ThemeData darkThemeData(BuildContext context) {
   return ThemeData.dark().copyWith(
     primaryColor: kPrimaryColor,
-    accentColor: kAccentDarkColor,
+    //accentColor: kAccentDarkColor,
     scaffoldBackgroundColor: Color(0xFF0D0C0E),
     appBarTheme: appBarTheme,
     colorScheme: ColorScheme.light(
@@ -40,7 +40,7 @@ ThemeData darkThemeData(BuildContext context) {
     ),
     backgroundColor: kBackgroundDarkColor,
     iconTheme: IconThemeData(color: kBodyTextColorDark),
-    accentIconTheme: IconThemeData(color: kAccentIconDarkColor),
+    //accentIconTheme: IconThemeData(color: kAccentIconDarkColor),
     primaryIconTheme: IconThemeData(color: kPrimaryIconDarkColor),
     textTheme: GoogleFonts.latoTextTheme().copyWith(
       bodyText1: TextStyle(color: kBodyTextColorDark),

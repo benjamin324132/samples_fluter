@@ -16,7 +16,6 @@ class FormScreen extends StatefulWidget {
 
 class _FormScreenState extends State<FormScreen> {
    TextEditingController cardNumberController = TextEditingController();
-  var _scaffoldKey = GlobalKey<ScaffoldState>();
   var _formKey = GlobalKey<FormState>();
   var _paymentCard = PaymentCard();
   var _autoValidateMode = AutovalidateMode.disabled;

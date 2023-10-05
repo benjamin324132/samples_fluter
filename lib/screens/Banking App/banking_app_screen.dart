@@ -97,7 +97,7 @@ class _BankingAppState extends State<BankingApp> {
             ),
             SizedBox(height: 30),
             Stack(
-              overflow: Overflow.clip,
+              //overflow: Overflow.clip,
               children: [
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 20),

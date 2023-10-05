@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_boxicons/flutter_boxicons.dart';
-import 'package:flutter_svg/svg.dart';
+
 
 class MiniPortafolio extends StatefulWidget {
   const MiniPortafolio({Key? key}) : super(key: key);

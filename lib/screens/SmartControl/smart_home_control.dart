@@ -135,6 +135,7 @@ class _SmartHomeControlState extends State<SmartHomeControl> {
   }
 }
 
+// ignore: must_be_immutable
 class SmartDeviceBox extends StatelessWidget {
   final String smartDeviceName;
   final IconData iconPath;
