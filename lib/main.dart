@@ -40,6 +40,7 @@ import 'package:awesome_ui/screens/Sopitas/sopitas_screen.dart';
 import 'package:awesome_ui/screens/SopitasV2/sopitas_screenV2.dart';
 import 'package:awesome_ui/screens/StorageApp/storage_screen.dart';
 import 'package:awesome_ui/screens/TaskApp/task_screen.dart';
+import 'package:awesome_ui/screens/TeamStats/team_stats_screen.dart';
 import 'package:awesome_ui/screens/Tetris/Tetris.dart';
 import 'package:awesome_ui/screens/Ticket/ticket_screen.dart';
 import 'package:awesome_ui/screens/TransferApp/transfer_screen.dart';
@@ -48,6 +49,7 @@ import 'package:awesome_ui/screens/Workout%20App/workout_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'screens/BarcodeScanner/barcode_scanner.dart';
+import 'screens/FurnitureOnboarding/furniture_screen.dart';
 import 'screens/PaymentTracker/payment_tracker_screen.dart';
 
 /*void main() {
@@ -379,12 +381,24 @@ class Chooser extends StatelessWidget {
                           builder: (context) => const SplashScreen()));
                     },
                     child: const Text("Hedon")),
-                    ElevatedButton(
+                ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => const TransferScreen()));
                     },
                     child: const Text("Transfer App")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const TeamStats()));
+                    },
+                    child: const Text("Team Stats")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const FurnitureScreen()));
+                    },
+                    child: const Text("Furniture App")),
               ],
             ),
           ),
