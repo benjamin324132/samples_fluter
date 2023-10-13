@@ -29,6 +29,7 @@ import 'package:awesome_ui/screens/Notes/posts_screen.dart';
 import 'package:awesome_ui/screens/Pdf/pages/invoices.dart';
 import 'package:awesome_ui/screens/Playstationcontroller/play_station_controller.dart';
 import 'package:awesome_ui/screens/PodcastApp/podcast_player_screen.dart';
+import 'package:awesome_ui/screens/Podify/podify_screen.dart';
 import 'package:awesome_ui/screens/Poster/poster_screen.dart';
 import 'package:awesome_ui/screens/ProductInventory/product_inventory_screen.dart';
 import 'package:awesome_ui/screens/RemoteTvControl/remote_tv_control_screen.dart';
@@ -399,6 +400,12 @@ class Chooser extends StatelessWidget {
                           builder: (context) => const FurnitureScreen()));
                     },
                     child: const Text("Furniture App")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const PodifyScreen()));
+                    },
+                    child: const Text("Podify")),    
               ],
             ),
           ),
