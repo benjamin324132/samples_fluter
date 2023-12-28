@@ -152,14 +152,14 @@ class PaymentTrackerScreen extends StatelessWidget {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.amber.withOpacity(0.23)),
-                      child: Column(
+                      child: const Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             crossAxisAlignment: CrossAxisAlignment.center,
-                            children: const [
+                            children: [
                               Icon(
                                 SimpleIcons.visa,
                                 size: 30,
@@ -173,7 +173,7 @@ class PaymentTrackerScreen extends StatelessWidget {
                               ),
                             ],
                           ),
-                          const Text("\$5,725",
+                          Text("\$5,725",
                               style: TextStyle(
                                   fontSize: 32,
                                   color: Colors.black,
@@ -189,14 +189,14 @@ class PaymentTrackerScreen extends StatelessWidget {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.pinkAccent.withOpacity(0.13)),
-                      child: Column(
+                      child: const Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             crossAxisAlignment: CrossAxisAlignment.center,
-                            children: const [
+                            children: [
                               Icon(
                                 SimpleIcons.americanexpress,
                                 size: 30,
@@ -210,7 +210,7 @@ class PaymentTrackerScreen extends StatelessWidget {
                               ),
                             ],
                           ),
-                          const Text("\$9,225",
+                          Text("\$9,225",
                               style: TextStyle(
                                   fontSize: 32,
                                   color: Colors.black,
@@ -226,14 +226,14 @@ class PaymentTrackerScreen extends StatelessWidget {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.lightBlue.withOpacity(0.2)),
-                      child: Column(
+                      child: const Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             crossAxisAlignment: CrossAxisAlignment.center,
-                            children: const [
+                            children: [
                               Icon(
                                 SimpleIcons.mastercard,
                                 size: 30,
@@ -247,7 +247,7 @@ class PaymentTrackerScreen extends StatelessWidget {
                               ),
                             ],
                           ),
-                          const Text("\$2,025",
+                          Text("\$2,025",
                               style: TextStyle(
                                   fontSize: 32,
                                   color: Colors.black,
@@ -335,12 +335,12 @@ class PaymentTrackerScreen extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 25),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 12),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 12),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
+                  children: [
                     Text(
                       "Transactions",
                       style: TextStyle(

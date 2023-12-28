@@ -1,10 +1,12 @@
 import 'package:awesome_ui/screens/A24/a24_screen.dart';
 import 'package:awesome_ui/screens/AnimatedBackground/animated_background_screen.dart';
+import 'package:awesome_ui/screens/Avici/avici_screen.dart';
 import 'package:awesome_ui/screens/BackPrompt/MyHomePage.dart';
 import 'package:awesome_ui/screens/Banking%20App/banking_app_screen.dart';
 import 'package:awesome_ui/screens/BoardingPass/boarding_pass_screen.dart';
 import 'package:awesome_ui/screens/Brutalism/brutalism_screen.dart';
 import 'package:awesome_ui/screens/Building/building_screen.dart';
+import 'package:awesome_ui/screens/Capi/capi_screen.dart';
 import 'package:awesome_ui/screens/Chat/chat_screen.dart';
 import 'package:awesome_ui/screens/Checkout/checkout_screen.dart';
 import 'package:awesome_ui/screens/Clock/main.dart';
@@ -405,7 +407,19 @@ class Chooser extends StatelessWidget {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => const PodifyScreen()));
                     },
-                    child: const Text("Podify")),    
+                    child: const Text("Podify")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const AviciScreen()));
+                    },
+                    child: const Text("Avici")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const CapiScreen()));
+                    },
+                    child: const Text("Capi")),
               ],
             ),
           ),
