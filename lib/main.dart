@@ -28,6 +28,7 @@ import 'package:awesome_ui/screens/Movies/movies_screen.dart';
 import 'package:awesome_ui/screens/NftMarketPlace/screens/onboarding_screen.dart';
 import 'package:awesome_ui/screens/NftScroll/nft_scroll_home.dart';
 import 'package:awesome_ui/screens/Notes/posts_screen.dart';
+import 'package:awesome_ui/screens/OozeBank/ooze_bank_screen.dart';
 import 'package:awesome_ui/screens/Pdf/pages/invoices.dart';
 import 'package:awesome_ui/screens/Playstationcontroller/play_station_controller.dart';
 import 'package:awesome_ui/screens/PodcastApp/podcast_player_screen.dart';
@@ -420,6 +421,12 @@ class Chooser extends StatelessWidget {
                           builder: (context) => const CapiScreen()));
                     },
                     child: const Text("Capi")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => OozeBankScreen()));
+                    },
+                    child: const Text("Ooze")),
               ],
             ),
           ),
