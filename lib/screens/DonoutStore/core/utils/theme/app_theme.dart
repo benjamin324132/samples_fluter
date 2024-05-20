@@ -35,9 +35,7 @@ class AppTheme {
       ),*/
       colorScheme: const ColorScheme.light().copyWith(
         primary: _primaryColorLight,
-        primaryVariant: _primaryColorLight,
         secondary: _secondaryColorLight,
-        secondaryVariant: _scaffoldColorLight,
         error: _errorColorLight,
       ),
       textTheme: TextTheme(
@@ -141,9 +139,7 @@ class AppTheme {
       ),*/
       colorScheme: const ColorScheme.dark().copyWith(
         primary: _primaryColorDark,
-        primaryVariant: _primaryColorDark,
         secondary: _secondaryColorDark,
-        secondaryVariant: _secondaryColorDark,
         error: _errorColorDark,
       ),
       textTheme: TextTheme(

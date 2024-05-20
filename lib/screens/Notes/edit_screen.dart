@@ -87,7 +87,7 @@ class _EditScreenState extends State<EditScreen> {
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                primary: const Color(0xFF7B61FF),
+                backgroundColor: const Color(0xFF7B61FF),
                 minimumSize: const Size(double.infinity, 48),
                 shape: const RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(12)),

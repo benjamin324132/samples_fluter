@@ -12,7 +12,7 @@ class ProductInventory extends StatefulWidget {
 }
 
 class _ProductInventoryState extends State<ProductInventory> {
-  String _scanBarcode = 'Unknown';
+  //String _scanBarcode = 'Unknown';
 
   Future<void> scanBarcodeNormal() async {
     String barcodeScanRes;
@@ -28,7 +28,7 @@ class _ProductInventoryState extends State<ProductInventory> {
 
     print(barcodeScanRes);
     setState(() {
-      _scanBarcode = barcodeScanRes;
+      //_scanBarcode = barcodeScanRes;
     });
     Navigator.of(context).push(MaterialPageRoute(
         builder: (context) => GetProductScreen(

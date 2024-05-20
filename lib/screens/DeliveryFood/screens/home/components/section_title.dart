@@ -15,7 +15,7 @@ class SectionTitle extends StatelessWidget {
           title,
           style: Theme.of(context).textTheme.headline6,
         ),
-        TextButton(onPressed: onPress, style: TextButton.styleFrom(primary: kActiveColor), child: Text("See All"))
+        TextButton(onPressed: onPress, style: TextButton.styleFrom(foregroundColor: kActiveColor), child: Text("See All"))
       ],
     );
   }

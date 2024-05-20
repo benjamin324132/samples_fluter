@@ -1,6 +1,5 @@
 import 'package:awesome_ui/screens/Playstationcontroller/components/playstation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class PlayStationControllerScreen extends StatelessWidget {
   const PlayStationControllerScreen({Key? key}) : super(key: key);

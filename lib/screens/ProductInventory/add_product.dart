@@ -13,7 +13,6 @@ class AddProduct extends StatefulWidget {
 class _AddProductState extends State<AddProduct> {
   TextEditingController _title = TextEditingController();
   TextEditingController _body = TextEditingController();
-  TextEditingController _img = TextEditingController();
 
 
 void addNewPost() async {
@@ -85,7 +84,7 @@ void addNewPost() async {
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                primary: const Color(0xFF7B61FF),
+                backgroundColor: const Color(0xFF7B61FF),
                 minimumSize: const Size(double.infinity, 45),
                 shape: const RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(12)),

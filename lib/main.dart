@@ -424,9 +424,9 @@ class Chooser extends StatelessWidget {
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => OozeBankScreen()));
+                          builder: (context) => const OozeBankScreen()));
                     },
-                    child: const Text("Ooze")),
+                    child: const Text("Ooze")),  
               ],
             ),
           ),

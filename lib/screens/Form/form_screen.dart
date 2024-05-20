@@ -88,7 +88,7 @@ class _FormScreenState extends State<FormScreen> {
           ),
           elevatedButtonTheme: ElevatedButtonThemeData(
             style: ElevatedButton.styleFrom(
-              primary: primaryColor,
+              backgroundColor: primaryColor,
               minimumSize: const Size(double.infinity, 56),
               shape: const RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(Radius.circular(12)),
@@ -97,8 +97,7 @@ class _FormScreenState extends State<FormScreen> {
           ),
           outlinedButtonTheme: OutlinedButtonThemeData(
             style: OutlinedButton.styleFrom(
-              primary: Colors.black,
-              minimumSize: const Size(double.infinity, 56),
+              foregroundColor: Colors.black, minimumSize: const Size(double.infinity, 56),
               shape: const RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(Radius.circular(12)),
               ),
