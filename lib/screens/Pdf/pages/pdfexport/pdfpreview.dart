@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:printing/printing.dart';
+//import 'package:printing/printing.dart';
 import '../../models/invoice.dart';
 import 'pdf/pdfexport.dart';
 
@@ -19,10 +19,9 @@ class PdfPreviewPage extends StatelessWidget {
         },
         child: const Icon(Icons.save),
       ),
-      body: PdfPreview(
-        build: (context) => makePdf(invoice),
+      //body: PdfPreview(build: (context) => makePdf(invoice),),
         //useActions: false,
-      ),
+        body: Text("Hi Mom"),
     );
   }
 }

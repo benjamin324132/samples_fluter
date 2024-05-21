@@ -1,7 +1,7 @@
 import 'package:awesome_ui/screens/ResumeBuilder/components/generate_pdf.dart';
 import 'package:awesome_ui/screens/ResumeBuilder/model/resume.dart';
 import 'package:flutter/material.dart';
-import 'package:printing/printing.dart';
+//import 'package:printing/printing.dart';
 
 class ResumePrevie extends StatelessWidget {
   const ResumePrevie({ Key? key, required this.resume }) : super(key: key);
@@ -17,10 +17,8 @@ class ResumePrevie extends StatelessWidget {
         },
         child: const Icon(Icons.save),
       ),
-      body: PdfPreview(
-        build: (context) => generatePdf(resume),
-        useActions: false,
-      ),
+      //body: PdfPreview(build: (context) => generatePdf(resume),useActions: false,),
+      body: Text("Hi mom"),
     );
   }
 }

@@ -223,7 +223,7 @@ class _FormScreenState extends State<FormScreen> {
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 child: ElevatedButton(
                   onPressed: _validateInputs,
-                  child: const Text('Pay Now'),
+                  child: const Text('Pay Now', style: TextStyle(color: Colors.white)),
                 ),
               )
             ],
