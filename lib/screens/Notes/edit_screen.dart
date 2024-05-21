@@ -94,7 +94,7 @@ class _EditScreenState extends State<EditScreen> {
                 ),
               ),
               onPressed: addNewPost,
-              child: const Text("Save"),
+              child: const Text("Save", style: TextStyle(color: Colors.white)),
             ),
             const Spacer(),
           ],

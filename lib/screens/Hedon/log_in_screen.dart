@@ -122,7 +122,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       minimumSize: MaterialStateProperty.all(
                           const Size(double.infinity, 48)),
                     ),
-                    child: const Text('Log in'),
+                    child: const Text('Log in', style: TextStyle(color: Colors.white),),
                   ),
                   const SizedBox(height: 16),
                   RichText(

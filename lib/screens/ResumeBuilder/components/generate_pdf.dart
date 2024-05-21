@@ -7,7 +7,7 @@ import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:permission_handler/permission_handler.dart';
-import 'package:printing/printing.dart';
+//import 'package:printing/printing.dart';
 import 'package:pdf/widgets.dart' as pw;
 
 void savePdf(dynamic resume) async {

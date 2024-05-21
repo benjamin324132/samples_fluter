@@ -63,7 +63,7 @@ class SplashScreen extends StatelessWidget {
                           ),
                         );
                       },
-                      child: const Text("Get Started"),
+                      child: const Text("Get Started", style: TextStyle(color: Colors.white),),
                     ),
                   ],
                 ),

@@ -86,7 +86,7 @@ class _AddScreenState extends State<AddScreen> {
                 ),
               ),
               onPressed: addNewPost,
-              child: const Text("Add"),
+              child: const Text("Add", style: TextStyle(color: Colors.white)),
             ),
             const Spacer(),
           ],
