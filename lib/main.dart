@@ -3,6 +3,7 @@ import 'package:awesome_ui/screens/AnimatedBackground/animated_background_screen
 import 'package:awesome_ui/screens/Avici/avici_screen.dart';
 import 'package:awesome_ui/screens/BackPrompt/MyHomePage.dart';
 import 'package:awesome_ui/screens/Banking%20App/banking_app_screen.dart';
+import 'package:awesome_ui/screens/Bato/bato_schat_screen.dart';
 import 'package:awesome_ui/screens/BoardingPass/boarding_pass_screen.dart';
 import 'package:awesome_ui/screens/Brutalism/brutalism_screen.dart';
 import 'package:awesome_ui/screens/Building/building_screen.dart';
@@ -42,6 +43,7 @@ import 'package:awesome_ui/screens/SmartControl/smart_home_control.dart';
 import 'package:awesome_ui/screens/Socket/socket_screen.dart';
 import 'package:awesome_ui/screens/Sopitas/sopitas_screen.dart';
 import 'package:awesome_ui/screens/SopitasV2/sopitas_screenV2.dart';
+import 'package:awesome_ui/screens/SpreadSheetForm/spreadsheet_form_screen.dart';
 import 'package:awesome_ui/screens/StorageApp/storage_screen.dart';
 import 'package:awesome_ui/screens/TaskApp/task_screen.dart';
 import 'package:awesome_ui/screens/TeamStats/team_stats_screen.dart';
@@ -426,7 +428,19 @@ class Chooser extends StatelessWidget {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => const OozeBankScreen()));
                     },
-                    child: const Text("Ooze")),  
+                    child: const Text("Ooze")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const BatoChatScreen()));
+                    },
+                    child: const Text("Bato")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const SpreadSheetForm()));
+                    },
+                    child: const Text("Spreadsheet Form")),
               ],
             ),
           ),
